@@ -1,15 +1,15 @@
 // @ts-check
 
 import _ from 'lodash';
+
 import getApp from '../server/index.js';
 import encrypt from '../server/lib/secure.js';
-import { getTestData, prepareData } from './helpers/index.js';
+import { prepareData, generateUserData } from './helpers/index.js';
 
 describe('test users CRUD', () => {
   let app;
   let knex;
   let models;
-  const testData = getTestData();
 
   beforeAll(async () => {
     app = await getApp();
@@ -44,7 +44,7 @@ describe('test users CRUD', () => {
   });
 
   it('create', async () => {
-    const params = testData.users.new;
+    const params = generateUserData();
     const response = await app.inject({
       method: 'POST',
       url: app.reverse('users'),
@@ -54,6 +54,7 @@ describe('test users CRUD', () => {
     });
 
     expect(response.statusCode).toBe(302);
+
     const expected = {
       ..._.omit(params, 'password'),
       passwordDigest: encrypt(params.password),

@@ -2,10 +2,14 @@
   "users": {
     "new": {
       "email": "malika_hodkiewicz75@live.com",
+      "firstName": "Virginie",
+      "lastName": "Crona",
       "password": "RLJvaIgPOnX5r03"
     },
     "existing": {
       "email": "lawrence.kulas87@outlook.com",
+      "firstName": "Casimir",
+      "lastName": "Stamm",
       "password": "O6AvLIQL1cbzrre"
     }
   }

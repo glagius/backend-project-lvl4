@@ -1,10 +1,11 @@
-# fastify-nodejs-application
-
-[![Node CI](https://github.com/hexlet-boilerplates/fastify-nodejs-application/workflows/Node%20CI/badge.svg)](https://github.com/hexlet-boilerplates/fastify-nodejs-application/actions)
+# Hexlet Task-Manager homework project.
 
 ### Hexlet tests and linter status:
 
 [![Actions Status](https://github.com/glagius/backend-project-lvl4/workflows/hexlet-check/badge.svg)](https://github.com/glagius/backend-project-lvl4/actions)
+[![Actions Status](https://github.com/glagius/backend-project-lvl4/workflows/node-ci/badge.svg)](https://github.com/glagius/backend-project-lvl4/actions)
+
+https://backend-project-lvl4-production.up.railway.app/
 
 ## Setup
 
@@ -16,12 +17,10 @@ make setup
 
 ```bash
 $ make start-backend
-# Open localhost:6000
 ```
 
 ```bash
 $ make start-frontend
-# Open localhost:6000
 ```
 
 ---

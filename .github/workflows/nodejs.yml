@@ -20,6 +20,7 @@ jobs:
           node-version: "18.x"
           cache: "npm"
       - run: make setup
+      - run: make build
       - run: make lint
       - run: make test
 
